@@ -1,0 +1,10 @@
+{
+  "method": "POST",
+  "auth": {
+    "required": true
+  },
+  "hasInput": true,
+  "hasOutput": true,
+  "hasMiddleware": false,
+  "hasHandler": true
+}

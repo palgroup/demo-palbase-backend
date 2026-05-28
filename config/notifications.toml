@@ -1,0 +1,12 @@
+# config/notifications.toml — notification provider config (config-as-code, Faz 4).
+#
+# Each [[notifications.providers]] is one channel→provider binding
+# (e.g. email→sendgrid). Multiple providers per channel form a
+# priority-ordered failover chain (priority 0 = primary).
+#
+# SECRETS: credentials never leave the server, so pull writes the
+# reference form "@secret/<NAME>". On push the CLI resolves <NAME> from
+# the environment; set it before pushing (export NOTIFY_EMAIL_SENDGRID_CREDENTIALS=...).
+# A provider already present on the server is left as-is on push —
+# rotating a credential requires deleting the provider and re-pushing.
+

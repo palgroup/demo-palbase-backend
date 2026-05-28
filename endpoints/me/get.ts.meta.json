@@ -1,0 +1,10 @@
+{
+  "method": "GET",
+  "auth": {
+    "required": true
+  },
+  "hasInput": false,
+  "hasOutput": true,
+  "hasMiddleware": false,
+  "hasHandler": true
+}

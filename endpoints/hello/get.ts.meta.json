@@ -1,0 +1,7 @@
+{
+  "method": "GET",
+  "hasInput": true,
+  "hasOutput": true,
+  "hasMiddleware": false,
+  "hasHandler": true
+}

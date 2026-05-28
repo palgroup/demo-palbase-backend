@@ -1,0 +1,18 @@
+# config/documents.toml — collection security rules (config-as-code, Faz 1).
+#
+# READ-ONLY MIRROR of server state. `palbase pull` overwrites
+# this file; this module has no push contract yet. Editing here does not
+# change the server.
+#
+# Each [collections.<name>] holds the app-level security predicate
+# strings {read, create, update, delete} for a paldocs collection. These
+# are JSON predicate expressions evaluated by the documents service — NOT
+# pg RLS/DDL (which lives in db/migrations). Document data is runtime and
+# is never pulled here.
+
+[collections]
+  [collections.default]
+    read = "auth.uid != null"
+    create = "auth.uid != null"
+    update = "auth.uid != null"
+    delete = "auth.uid != null"
