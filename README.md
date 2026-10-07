@@ -1,3 +1,6 @@
+> [!WARNING]
+> **This demo teaches an API Palbase no longer has, and this repository is archived.** A Palbase backend today is a set of class controllers on [`@palbase/backend`](https://www.npmjs.com/package/@palbase/backend) — its README is where to start. Nothing here is updated.
+
 # @palbase/backend — Backend SDK
 
 TypeScript SDK for writing **Palbase backend endpoints**. Tek dosya = bir HTTP endpoint, file-based routing. Customer'ın yazdığı tek şey `defineEndpoint`'le handler — runtime ctx, auth, schema validation, OpenAPI generation, codegen — hepsi otomatik.
